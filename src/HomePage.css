@@ -1,0 +1,61 @@
+div.Parent{
+    display: flex;
+    height: calc(100dvh - 50px); 
+    width: calc(100vw - 50px);
+    margin: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    flex-wrap:wrap;
+    height: 100%;
+    width: calc(100% - 120px);
+    min-width: 600px;
+    min-height: 400px;
+    margin-left: 20px;
+    background-color: #1D2126;
+    border-radius: 5px;
+    /* overflow: auto; */
+}
+
+nav{       
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100px;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    cursor: pointer;  
+}
+
+div.add:hover{
+    background-color: #262626;
+}
+
+div.add{
+    text-decoration: none;
+    background-color: #131313;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    user-select: none;
+}
+
+div.item{
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 150px;
+    height: 150px;   
+}
