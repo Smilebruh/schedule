@@ -31,17 +31,22 @@ nav{
     min-width: 100px;
     border-radius: 5px;
     background-color: #1E1E1E;
-    cursor: pointer;  
 }
 
-div.add:hover{
-    background-color: #262626;
+button.add:hover{
+    background-color: transparent;
 }
 
-div.add{
-    text-decoration: none;
+button.add:active{
+    transform: scale(0.90);
+    background-color: #222222;
+}
+
+button.add{
+    all: unset;
     background-color: #131313;
     border-radius: 50px;
+    border: 3px solid #131313;
     height: 50px;
     width: 50px;
     margin: 10%;
@@ -50,6 +55,7 @@ div.add{
     align-items: center;
     font-size: 40px;
     user-select: none;
+    cursor: pointer;  
 }
 
 div.item{

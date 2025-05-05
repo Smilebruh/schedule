@@ -4,8 +4,8 @@ function HomePage(){
     return(     
         <div className="Parent">
             <nav>
-            {/* <div className="add">+</di> */}
-            <button className="add">add</button>
+            <button className="add">+</button>
+
 
             
             </nav>
