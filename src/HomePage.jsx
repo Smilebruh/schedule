@@ -6,7 +6,6 @@ const color = [
     "green",
     "blue",
     "yellow",
-    "purple",
     
 ]
 
@@ -16,9 +15,22 @@ function HomePage(){
         <div className="Parent">
             <nav>
                 <button onClick={()=>{
-                    let colorindex = Math.floor(Math.random() * 5);
+                    let colorindex = Math.floor(Math.random() * 4);
                     let currentdivcolor = color[colorindex];
-                    let div = <div style={{backgroundColor:currentdivcolor}} className="item">hai</div>
+                    let div = (
+                    <div style={{backgroundColor:"#1E1E1E",display:"flex",justifyContent:"center"}} className="item">
+                        <input 
+                        type="text" 
+                        style={{
+                            all : "unset", 
+                            borderBottom: "2px solid white",
+                            width: "80%", 
+                            height: "20%", 
+                            margin: "10px",
+                        }} 
+                        autoFocus/>
+                    </div>
+                    )
                     let newarr = [...notes,div]
                     addNotes(newarr);
                 }} className="add">+</button>  
